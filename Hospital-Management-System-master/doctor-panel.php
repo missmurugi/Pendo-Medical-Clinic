@@ -51,7 +51,7 @@ if(isset($_GET['cancel']))
     
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-  <a class="navbar-brand" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> Global Hospital </a>
+  <a class="navbar-brand" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> PENDO MEDICAL CLINIC </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -59,20 +59,20 @@ if(isset($_GET['cancel']))
     <style >
       .btn-outline-light:hover{
         color: #25bef7;
-        background-color: #f8f9fa;
-        border-color: #f8f9fa;
+        background-color: #07bc5e;
+        border-color: #07bc5e;
       }
     </style>
 
   <style >
     .bg-primary {
-    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+    background: -webkit-linear-gradient(left, #0b8b48, #fb6c3a);
 }
 .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: #342ac1;
-    border-color: #007bff;
+    background-color: #07bc5e;
+    border-color: #07bc5e;
 }
 .text-primary {
     color: #342ac1!important;
@@ -90,7 +90,7 @@ if(isset($_GET['cancel']))
     </ul>
     <form class="form-inline my-2 my-lg-0" method="post" action="search.php">
       <input class="form-control mr-sm-2" type="text" placeholder="Enter contact number" aria-label="Search" name="contact">
-      <input type="submit" class="btn btn-outline-light" id="inputbtn" name="search_submit" value="Search">
+      <input type="submit" class="btn btn-outline-light" id="inputbtn" name="search_submit" value="Search" style="color: white;">
     </form>
   </div>
 </nav>
@@ -121,15 +121,17 @@ if(isset($_GET['cancel']))
                <div class="col-sm-4" style="left: 10%">
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body">
-                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-list fa-stack-1x fa-inverse"></i> </span>
-                      <h4 class="StepTitle" style="margin-top: 5%;"> View Appointments</h4>
+                      <span class="fa-stack fa-2x"> 
+                        <i class="fa fa-square fa-stack-2x" style="color: #07bc5e;"></i> 
+                        <i class="fa fa-list fa-stack-1x fa-inverse"></i> </span>
+                      <h4 class="StepTitle" style="margin-top: 5%; color: #07bc5e;"> View Appointments</h4>
                       <script>
                         function clickDiv(id) {
                           document.querySelector(id).click();
                         }
                       </script>                      
                       <p class="links cl-effect-1">
-                        <a href="#list-app" onclick="clickDiv('#list-app-list')">
+                        <a href="#list-app" onclick="clickDiv('#list-app-list')" style="color: #07bc5e;">
                           Appointment List
                         </a>
                       </p>
@@ -140,11 +142,12 @@ if(isset($_GET['cancel']))
                 <div class="col-sm-4" style="left: 15%">
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body">
-                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-list-ul fa-stack-1x fa-inverse"></i> </span>
-                      <h4 class="StepTitle" style="margin-top: 5%;"> Prescriptions</h4>
+                      <span class="fa-stack fa-2x"> 
+                        <i class="fa fa-square fa-stack-2x" style="color: #07bc5e;"></i> <i class="fa fa-list-ul fa-stack-1x fa-inverse"></i> </span>
+                      <h4 class="StepTitle" style="margin-top: 5%; color: #07bc5e;"> Prescriptions</h4>
                         
                       <p class="links cl-effect-1">
-                        <a href="#list-pres" onclick="clickDiv('#list-pres-list')">
+                        <a href="#list-pres" onclick="clickDiv('#list-pres-list')" style="color: #07bc5e;">
                           Prescription List
                         </a>
                       </p>

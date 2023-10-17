@@ -38,8 +38,6 @@ if(isset($_POST['docsub1']))
 ?>
 <html lang="en">
   <head>
-
-
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
@@ -53,7 +51,7 @@ if(isset($_POST['docsub1']))
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <a class="navbar-brand" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> Global Hospital </a>
+  <a class="navbar-brand" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>PENDO MEDICAL CLINIC </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -78,7 +76,7 @@ if(isset($_POST['docsub1']))
 
   <style >
     .bg-primary {
-    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+    background: -webkit-linear-gradient(left, #0b8b48, #fb6c3a);
 }
 
 .col-md-4{
@@ -88,8 +86,8 @@ if(isset($_POST['docsub1']))
 .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: #342ac1;
-    border-color: #007bff;
+    background-color: #07bc5e;
+    border-color: #07bc5e;
 }
 .text-primary {
     color: #342ac1!important;
@@ -104,8 +102,8 @@ if(isset($_POST['docsub1']))
 }
 
 .btn-primary{
-  background-color: #3c50c1;
-  border-color: #3c50c1;
+  background-color: #07bc5e;
+  border-color: #07bc5e;
 }
   </style>
 
@@ -153,15 +151,17 @@ if(isset($_POST['docsub1']))
                <div class="col-sm-4">
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body">
-                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
-                      <h4 class="StepTitle" style="margin-top: 5%;">Doctor List</h4>
+                      <span class="fa-stack fa-2x"> 
+                        <i class="fa fa-square fa-stack-2x" style="color: #07bc5e"></i> 
+                        <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
+                      <h4 class="StepTitle" style="margin-top: 5%; color: #07bc5e;">Doctor List</h4>
                       <script>
                         function clickDiv(id) {
                           document.querySelector(id).click();
                         }
                       </script> 
                       <p class="links cl-effect-1">
-                        <a href="#list-doc" onclick="clickDiv('#list-doc-list')">
+                        <a href="#list-doc" onclick="clickDiv('#list-doc-list')" style="color: #07bc5e">
                           View Doctors
                         </a>
                       </p>
@@ -172,11 +172,13 @@ if(isset($_POST['docsub1']))
                 <div class="col-sm-4" style="left: -3%">
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body" >
-                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
-                      <h4 class="StepTitle" style="margin-top: 5%;">Patient List</h4>
+                      <span class="fa-stack fa-2x"> 
+                        <i class="fa fa-square fa-stack-2x" style="color: #07bc5e"></i> 
+                        <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
+                      <h4 class="StepTitle" style="margin-top: 5%; color: #07bc5e;">Patient List</h4>
                       
                       <p class="cl-effect-1">
-                        <a href="#app-hist" onclick="clickDiv('#list-pat-list')">
+                        <a href="#app-hist" onclick="clickDiv('#list-pat-list')" style="color: #07bc5e">
                           View Patients
                         </a>
                       </p>
@@ -188,11 +190,13 @@ if(isset($_POST['docsub1']))
                 <div class="col-sm-4">
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body" >
-                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-paperclip fa-stack-1x fa-inverse"></i> </span>
-                      <h4 class="StepTitle" style="margin-top: 5%;">Appointment Details</h4>
+                      <span class="fa-stack fa-2x"> 
+                        <i class="fa fa-square fa-stack-2x" style="color: #07bc5e"></i> 
+                        <i class="fa fa-paperclip fa-stack-1x fa-inverse"></i> </span>
+                      <h4 class="StepTitle" style="margin-top: 5%; color: #07bc5e;">Appointment Details</h4>
                     
                       <p class="cl-effect-1">
-                        <a href="#app-hist" onclick="clickDiv('#list-app-list')">
+                        <a href="#app-hist" onclick="clickDiv('#list-app-list')" style="color: #07bc5e">
                           View Appointments
                         </a>
                       </p>
@@ -205,11 +209,13 @@ if(isset($_POST['docsub1']))
                 <div class="col-sm-4" style="left: 13%;margin-top: 5%;">
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body" >
-                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-list-ul fa-stack-1x fa-inverse"></i> </span>
-                      <h4 class="StepTitle" style="margin-top: 5%;">Prescription List</h4>
+                      <span class="fa-stack fa-2x"> 
+                        <i class="fa fa-square fa-stack-2x" style="color: #07bc5e"></i> 
+                        <i class="fa fa-list-ul fa-stack-1x fa-inverse"></i> </span>
+                      <h4 class="StepTitle" style="margin-top: 5%; color: #07bc5e">Prescription List</h4>
                     
                       <p class="cl-effect-1">
-                        <a href="#list-pres" onclick="clickDiv('#list-pres-list')">
+                        <a href="#list-pres" onclick="clickDiv('#list-pres-list')" style="color: #07bc5e">
                           View Prescriptions
                         </a>
                       </p>
@@ -221,13 +227,15 @@ if(isset($_POST['docsub1']))
                 <div class="col-sm-4" style="left: 18%;margin-top: 5%">
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body" >
-                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-plus fa-stack-1x fa-inverse"></i> </span>
-                      <h4 class="StepTitle" style="margin-top: 5%;">Manage Doctors</h4>
+                      <span class="fa-stack fa-2x"> 
+                        <i class="fa fa-square fa-stack-2x" style="color: #07bc5e"></i> 
+                        <i class="fa fa-plus fa-stack-1x fa-inverse"></i> </span>
+                      <h4 class="StepTitle" style="margin-top: 5%; color: #07bc5e">Manage Doctors</h4>
                     
                       <p class="cl-effect-1">
-                        <a href="#app-hist" onclick="clickDiv('#list-adoc-list')">Add Doctors</a>
+                        <a href="#app-hist" onclick="clickDiv('#list-adoc-list')" style="color: #07bc5e">Add Doctors</a>
                         &nbsp|
-                        <a href="#app-hist" onclick="clickDiv('#list-ddoc-list')">
+                        <a href="#app-hist" onclick="clickDiv('#list-ddoc-list')" style="color: #07bc5e">
                           Delete Doctors
                         </a>
                       </p>

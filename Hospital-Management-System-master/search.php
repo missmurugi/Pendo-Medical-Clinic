@@ -1,12 +1,12 @@
 <?php
 session_start();
-$con=mysqli_connect("localhost","root","","myhmsdb");
-if(isset($_POST['search_submit'])){
-  $contact=$_POST['contact'];
-  $docname = $_SESSION['dname'];
- $query="select * from appointmenttb where contact='$contact' and doctor='$docname';";
- $result=mysqli_query($con,$query);
- echo '<!DOCTYPE html>
+$con = mysqli_connect("localhost", "root", "", "myhmsdb");
+if (isset($_POST["search_submit"])) {
+    $contact = $_POST["contact"];
+    $docname = $_SESSION["dname"];
+    $query = "select * from appointmenttb where contact='$contact' and doctor='$docname';";
+    $result = mysqli_query($con, $query);
+    echo '<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -16,39 +16,54 @@ if(isset($_POST['search_submit'])){
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   </head>
-  <body style="background-color:#342ac1;color:white;text-align:center;padding-top:50px;">
-  <div class="container" style="text-align:left;">
-  <center><h3>Search Results</h3></center><br>
-  <table class="table table-hover">
-  <thead>
-    <tr>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Email</th>
-      <th>Contact</th>
-      <th>Appointment Date</th>
-      <th>Appointment Time</th>
-    </tr>
-  </thead>
-  <tbody>
-  ';
-  while($row=mysqli_fetch_array($result)){
-    $fname=$row['fname'];
-    $lname=$row['lname'];
-    $email=$row['email'];
-    $contact=$row['contact'];
-    $appdate=$row['appdate'];
-    $apptime=$row['apptime'];
-    echo '<tr>
-      <td>'.$fname.'</td>
-      <td>'.$lname.'</td>
-      <td>'.$email.'</td>
-      <td>'.$contact.'</td>
-      <td>'.$appdate.'</td>
-      <td>'.$apptime.'</td>
-    </tr>';
-  }
-echo '</tbody></table></div> 
+
+  <body style="background-color: #0b8b48; color: white; text-align: center; padding-top: 50px;">
+    <div class="container" style="text-align: left; padding: 10px;">
+      <center><h3>Search Results</h3></center><br>
+      <table class="table table-hover" style="background-color: #495057;">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Contact</th>
+            <th>Appointment Date</th>
+            <th>Appointment Time</th>
+          </tr>
+        </thead>
+        <tbody>
+        ';
+          while ($row = mysqli_fetch_array($result)) {
+              $fname = $row["fname"];
+              $lname = $row["lname"];
+              $email = $row["email"];
+              $contact = $row["contact"];
+              $appdate = $row["appdate"];
+              $apptime = $row["apptime"];
+              echo '<tr>
+            <td>' .
+                  $fname .
+                  '</td>
+            <td>' .
+                  $lname .
+                  '</td>
+            <td>' .
+                  $email .
+                  '</td>
+            <td>' .
+                  $contact .
+                  '</td>
+            <td>' .
+                  $appdate .
+                  '</td>
+            <td>' .
+                  $apptime .
+                  '</td>
+          </tr>';
+          }
+          echo '</tbody>
+        </table>
+        </div> 
 <div><a href="doctor-panel.php" class="btn btn-light">Go Back</a></div>
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

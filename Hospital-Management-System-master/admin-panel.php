@@ -165,41 +165,34 @@ function get_specs(){
     
         <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
 
-    
-  
-    
-    
-
-
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-  <a class="navbar-brand" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> Global Hospital </a>
+  <a class="navbar-brand" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> PENDO MEDICAL CLINIC </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <style >
     .bg-primary {
-    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+    background: -webkit-linear-gradient(left, #0b8b48, #fb6c3a);
 }
 .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: #342ac1;
-    border-color: #007bff;
+    background-color: #07bc5e;
+    border-color: #07bc5e;
 }
 .text-primary {
     color: #342ac1!important;
 }
 
 .btn-primary{
-  background-color: #3c50c1;
-  border-color: #3c50c1;
+  background-color: #07bc5e;
+  border-color: #07bc5e;
 }
   </style>
 
@@ -244,15 +237,17 @@ function get_specs(){
                <div class="col-sm-4" style="left: 5%">
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body">
-                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-terminal fa-stack-1x fa-inverse"></i> </span>
-                      <h4 class="StepTitle" style="margin-top: 5%;"> Book My Appointment</h4>
+                      <span class="fa-stack fa-2x"> 
+                        <i class="fa fa-square fa-stack-2x" style="color: #07bc5e"></i> 
+                        <i class="fa fa-terminal fa-stack-1x fa-inverse"></i> </span>
+                      <h4 class="StepTitle" style="color: #07bc5e; margin-top: 5%;"> Book My Appointment</h4>
                       <script>
                         function clickDiv(id) {
                           document.querySelector(id).click();
                         }
                       </script>                      
                       <p class="links cl-effect-1">
-                        <a href="#list-home" onclick="clickDiv('#list-home-list')">
+                        <a href="#list-home" onclick="clickDiv('#list-home-list')" style="color: #07bc5e">
                           Book Appointment
                         </a>
                       </p>
@@ -263,11 +258,11 @@ function get_specs(){
                 <div class="col-sm-4" style="left: 10%">
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body" >
-                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-paperclip fa-stack-1x fa-inverse"></i> </span>
-                      <h4 class="StepTitle" style="margin-top: 5%;">My Appointments</h2>
+                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x" style="color: #07bc5e"></i> <i class="fa fa-paperclip fa-stack-1x fa-inverse"></i> </span>
+                      <h4 class="StepTitle" style="color: #07bc5e; margin-top: 5%;">My Appointments</h2>
                     
                       <p class="cl-effect-1">
-                        <a href="#app-hist" onclick="clickDiv('#list-pat-list')">
+                        <a href="#app-hist" onclick="clickDiv('#list-pat-list')" style="color: #07bc5e">
                           View Appointment History
                         </a>
                       </p>
@@ -279,11 +274,11 @@ function get_specs(){
                 <div class="col-sm-4" style="left: 20%;margin-top:5%">
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body" >
-                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-list-ul fa-stack-1x fa-inverse"></i> </span>
-                      <h4 class="StepTitle" style="margin-top: 5%;">Prescriptions</h2>
+                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x" style="color: #07bc5e"></i> <i class="fa fa-list-ul fa-stack-1x fa-inverse"></i> </span>
+                      <h4 class="StepTitle" style="color: #07bc5e; margin-top: 5%;">Prescriptions</h2>
                     
                       <p class="cl-effect-1">
-                        <a href="#list-pres" onclick="clickDiv('#list-pres-list')">
+                        <a href="#list-pres" onclick="clickDiv('#list-pres-list')" style="color: #07bc5e">
                           View Prescription List
                         </a>
                       </p>
@@ -367,9 +362,6 @@ function get_specs(){
                 document.getElementById('docFees').value = selection;
               };
             </script>
-
-                  
-                  
 
                   
                         <!-- <div class="col-md-4"><label for="doctor">Doctors:</label></div>

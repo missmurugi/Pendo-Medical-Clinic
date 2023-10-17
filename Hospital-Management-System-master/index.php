@@ -59,7 +59,7 @@ function checklen()
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item" style="margin-right: 40px;">
+          <li class="nav-item" style="margin-right: 60px;">
             <a class="nav-link js-scroll-trigger" href="index.php" style="color: white;font-family: 'IBM Plex Sans', sans-serif;"><h6>HOME</h6></a>
           </li>
   
@@ -67,7 +67,7 @@ function checklen()
             <a class="nav-link js-scroll-trigger" href="services.html" style="color: white;font-family: 'IBM Plex Sans', sans-serif;"><h6>ABOUT US</h6></a>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item" style="margin-right: 350px;">
             <a class="nav-link js-scroll-trigger" href="contact.html" style="color: white;font-family: 'IBM Plex Sans', sans-serif;"><h6>CONTACT</h6></a>
           </li>
         </ul>

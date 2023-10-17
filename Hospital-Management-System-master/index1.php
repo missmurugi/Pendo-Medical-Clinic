@@ -30,11 +30,12 @@ include("header.php");
 }
 
   </style>
-  <body style="background: -webkit-linear-gradient(left, #3931af, #00c6ff); background-size: cover;">
+  <body style="background: -webkit-linear-gradient(left, #0b8b48, #fb6c3a); background-size: cover;">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" >
     <div class="container">
 
-      <a class="navbar-brand js-scroll-trigger" href="index.php" style="margin-top: 10px;margin-left:-65px;font-family: 'IBM Plex Sans', sans-serif;"><h4><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp GLOBAL HOSPITALS</h4></a>
+      <a class="navbar-brand js-scroll-trigger" href="index.php" style="margin-top: 10px;margin-left:-65px;font-family: 'IBM Plex Sans', sans-serif;">
+        <h4><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp PENDO MEDICAL CLINIC</h4></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -58,17 +59,17 @@ include("header.php");
 
 
 
-    <div class="container-fluid" style="margin-top:60px;margin-bottom:60px;color:#34495E;">
+    <div class="container-fluid" style="margin-top:30px;margin-bottom:50px;color:#34495E;">
       <div class="row">
 
-         <div class="col-md-7" style="padding-left: 180px; ">
+         <div class="col-md-7" style="padding-left: 190px; ">
                  <div style="-webkit-animation: mover 2s infinite alternate;
     animation: mover 1s infinite alternate;">
           <img src="images/ambulance1.png" alt="" style="width: 20%;padding-left: 40px;margin-top: 150px;margin-left: 45px;margin-bottom:15px">
       </div>
 
       <div style="color: white;">
-            <h4 style="font-family: 'IBM Plex Sans', sans-serif;"> We are here for you!</h4>
+            <h4 style="font-family: 'IBM Plex Sans', sans-serif;"> Your Health Matters!!</h4>
           </div>
 
          </div>
@@ -77,19 +78,19 @@ include("header.php");
           <div class="card" style="font-family: 'IBM Plex Sans', sans-serif;">
             <div class="card-body">
               <center>
-                <i class="fa fa-hospital-o fa-3x" aria-hidden="true" style="color:#0062cc"></i>
+                <i class="fa fa-hospital-o fa-3x" aria-hidden="true" style="color:#07bc5e"></i>
                 <br>
-              <h3 style="margin-top: 10%">Patient Login</h3><br>
+              <h3 style="margin-top: 5%">Patient Login</h3><br>
               <form class="form-group" method="POST" action="func.php">
                 <div class="row" style="margin-top: 10%">
                   <div class="col-md-4"><label>Email-ID: </label></div>
                   <div class="col-md-8"><input type="text" name="email" class="form-control" placeholder="enter email ID" required/></div><br><br>
-                  <div class="col-md-4" style="margin-top: 8%"><label>Password: </label></div>
-                  <div class="col-md-8" style="margin-top: 8%"><input type="password" class="form-control" name="password2" placeholder="enter password" required/></div><br><br><br>
+                  <div class="col-md-4" style="margin-top: 5%"><label>Password: </label></div>
+                  <div class="col-md-8" style="margin-top: 5%"><input type="password" class="form-control" name="password2" placeholder="enter password" required/></div><br><br><br>
                 </div>
                 <div class="row">
-                 <div class="col-md-4"  style="padding-left: 160px;margin-top: 10%">
-                    <center><input type="submit" id="inputbtn" name="patsub" value="Login" class="btn btn-primary"></center></div>           
+                 <div class="col-md-4"  style="padding-left: 200px;margin-top: 5%">
+                    <center><input type="submit" id="inputbtn" name="patsub" value="Login" class="btn btn-success"></center></div>           
                  <!--  <div class="col-md-8" style="margin-top: 10%">
                     <a href="index.php" class="btn btn-primary">Back</a></div> -->
                 </div>
