@@ -116,7 +116,7 @@ function checklen()
                                         <div class="form-group">
                                             <div class="maxl">
                                                 <label class="radio inline"> 
-                                                    <input type="radio" name="gender" value="Male" checked>
+                                                    <input type="radio" name="gender" value="Male" style="color: #07bc5e;" checked>
                                                     <span> Male </span> 
                                                 </label>
                                                 <label class="radio inline"> 
@@ -124,7 +124,7 @@ function checklen()
                                                     <span>Female </span> 
                                                 </label>
                                             </div>
-                                            <a href="index1.php">Already have an account?</a>
+                                            <a href="index1.php" style="color: #07bc5e;">Already have an account?</a>
                                         </div>
                                     </div>
                                 

@@ -228,7 +228,7 @@ function get_specs(){
     </div><br>
   </div>
   <div class="col-md-8" style="margin-top: 3%;">
-    <div class="tab-content" id="nav-tabContent" style="width: 950px;">
+    <div class="tab-content" id="nav-tabContent" style="width: 950px;" >
 
 
       <div class="tab-pane fade  show active" id="list-dash" role="tabpanel" aria-labelledby="list-dash-list">
